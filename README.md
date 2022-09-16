@@ -11,7 +11,11 @@ It can be used to provide easy to use callback APIs for system and user classes.
 
 ## Usage
 
-Here a simple usage example showing how to use the function class to call free functions, non static member functions, lambda expressions and functors.
+The examples folder contains some simple applications.
+
+Additionally, the folder contains and a reworked **Teensy IntervalTimer** class that extends the API to accept static functions. The required revision was mainly to adapt the declaration of the `begin(...)` functions and the static array `funct_table`. I.e. `begin(void(*func)(),...)` became `begin(callback_t funct,...)`.
+
+Below a simple usage example showing how to use the function class to call free functions, non static member functions, lambda expressions and functors.
 ```c++
 #include "staticFunctional.h"
 using namespace staticFunctional; // save typing
