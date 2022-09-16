@@ -51,9 +51,6 @@ void setup()
 
     f = myClass; // functor, f uses operator ()()
     f();
-
-    myClass.i = 17;
-    f();
 }
 
 void loop(){
