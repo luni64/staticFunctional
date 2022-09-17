@@ -1,0 +1,19 @@
+{
+    "name": "staticFunctional",
+    "version": "0.1.0",
+    "description": "Drop in replacement for std-function for use in embedded systems. Doesn't use dynamic memory, small memory footprint, works with GCC v7 and higher, requires C++11 or higher",
+    "keywords": "callbacks, arduino, std-function, lambda expressions, functors",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/luni64/staticFunctional"
+    },
+    "authors":
+    {
+      "name": "luni64",
+      "url": "https://github.com/luni64",
+      "maintainer": true
+    },
+    "homepage": "https://github.com/luni64/staticFunctional",
+    "frameworks": "arduino"
+  }
