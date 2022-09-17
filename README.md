@@ -1,11 +1,13 @@
 # staticFunctional
 
 ## Purpose
-The library provides a std::function like class for use in small embedded systems.
+The library provides a drop in replacement for std::function 
 
+Key features:
+- Arduino compatible
 - Small memory overhead (e.g. for a Teensy 3.2 board it reduces code size by ~10kB and uses ~1kB less static memory).
 - No dynamic memory allocation
-- Compatible to C++11 (or higher)
+- Compatible to C++11 (or higher) GCC toolchains
 
 It can be used to provide easy to use callback APIs for system and user classes.
 
@@ -63,7 +65,7 @@ void loop(){
 // functor 2i=84
 ```
 
-In addition to more simple usage examples, the examples folder contains a reworked **Teensy IntervalTimer** class which extends the API to accept static functions. The required revision was mainly to adapt the declaration of the `begin(...)` functions and the static array `funct_table`. I.e. `begin(void(*func)(),...)` became `begin(callback_t funct,...)`.
+The examples folder contains more usage examples and a reworked **Teensy IntervalTimer** class which extends the API to accept more or less anything which can be called (functions, member functions, lambdas, functors..) as callback. The required revision of the IntervalTimer was mainly to adapt the declaration of the `begin(...)` functions and the static array `funct_table`. I.e. `begin(void(*func)(),...)` became `begin(callback_t funct,...)`.
 
 
 ## Credits
