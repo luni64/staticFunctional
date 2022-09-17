@@ -1,5 +1,5 @@
 [![PlatformIO Registry](https://badges.registry.platformio.org/packages/luni64/library/staticFunctional.svg)](https://registry.platformio.org/libraries/luni64/staticFunctional)
-[![arduino-library-badge](https://www.ardu-badge.com/badge/MyLibrary.svg?)](https://www.ardu-badge.com/staticFunctional)
+[![arduino-library-badge](https://www.ardu-badge.com/badge/staticFunctional.svg?)](https://www.ardu-badge.com/staticFunctional)
 
 # staticFunctional
 
