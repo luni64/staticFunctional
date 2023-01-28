@@ -7,10 +7,10 @@
 The library provides a drop in replacement for std::function 
 
 Key features:
-- Arduino compatible
+- Arduino framework compatible
 - Small memory overhead (e.g. for a Teensy 3.2 board it reduces code size by ~10kB and uses ~1kB less static memory).
 - No dynamic memory allocation
-- Compatible to C++11 (or higher) GCC toolchains
+- Compatible to C++11 (or higher) GCC toolchains (does not work with gcc-avr)
 
 It can be used to provide easy to use callback APIs for system and user classes.
 
